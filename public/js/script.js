@@ -43,9 +43,10 @@
   $(function() {
     $("textarea").autoexpand();
 
-    var hash = window.location.search.match(/^\??(.*?)\/?$/)[1]
-      .replace(/(_|%20)/g, ' ')
-      .replace(/^in /, '+');
+    // var hash = window.location.search.match(/^\??(.*?)\/?$/)[1]
+    //   .replace(/(_|%20)/g, ' ')
+    //   .replace(/^in /, '+');
+    var hash = "November 30 10:00am";
     var date = Date.parse(hash);
 
     if (date) {
