@@ -140,3 +140,21 @@ div.hr {
 .hide {
   display: none;
 }
+
+.register-button {
+  color: #fff;
+  background: #eb3f3c;
+  border-bottom: 2px solid #e92825;
+  line-height: 1.8;
+  padding: 12px 14px;
+  font-size: 12px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.register-button:hover{
+  background: #e92825;
+}
