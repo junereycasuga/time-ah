@@ -9,6 +9,12 @@
   Countdown.prototype = {
     initialize: function() {
       this.update();
+      $(".timer, .t-sub").hide();
+      $(".logo").addClass('animated fadeInDown');
+      // $(".logo").on('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(){
+        $(".timer, .t-sub").show();
+        $(".timer, .t-sub").addClass('animated fadeIn');
+      // });
       $("title").html(this.getDateString());
     },
 
