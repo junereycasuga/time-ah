@@ -12,10 +12,14 @@
       $(".timer, .t-sub").hide();
       $(".logo").addClass('animated fadeInDown');
       // $(".logo").on('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(){
-        $(".timer, .t-sub").show();
-        $(".timer, .t-sub").addClass('animated fadeIn');
+      $(".timer, .t-sub").show();
+      $(".timer, .t-sub").addClass('animated fadeIn');
       // });
-      $("title").html(this.getDateString());
+      // $("title").html(this.getDateString());
+
+      setTimeout(function(){
+        window.location.href='slide';
+      }, 30000);
     },
 
     update: function() {

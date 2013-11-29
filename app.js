@@ -1,10 +1,13 @@
 var express = require('express');
 var app = express();
-
 app.use(express.static('public'));
 
 app.get('/', function(req, res){
 	res.sendfile('./public/index.html');
+});
+
+app.get('/slide', function(req, res){
+	res.sendfile('./public/slide.html');
 });
 
 var port = process.env.PORT || 5000;
