@@ -16,10 +16,16 @@
       $(".timer, .t-sub").addClass('animated fadeIn');
       // });
       // $("title").html(this.getDateString());
+      $("#maximage").hide();
 
-      setTimeout(function(){
-        window.location.href='slide';
-      }, 30000);
+      // setTimeout(function(){
+      //   $("#all").addClass("animated fadeOut")
+
+      //   $("#all").on('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(){
+      //     $("#maximage").show();
+      //     jQuery("#maximage").maximage();
+      //   });
+      // }, 30000);
     },
 
     update: function() {
