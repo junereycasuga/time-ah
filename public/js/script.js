@@ -63,7 +63,7 @@
       .replace(/(_|%20)/g, ' ')
       .replace(/^in /, '+');
     if (!hash) {
-      hash = "November 30 10:00am"; 
+      hash = "December 25"; 
     }
     var date = Date.parse(hash);
 
