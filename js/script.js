@@ -10,11 +10,11 @@
     initialize: function() {
       this.update();
       $(".timer, .t-sub").hide();
-      // $(".logo").addClass('animated fadeInDown');
-      // $(".logo").on('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(){
+      $(".logo").addClass('animated fadeInDown');
+      $(".logo").on('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(){
         $(".timer, .t-sub").show();
         $(".timer, .t-sub").addClass('animated fadeIn');
-      // });
+      });
       $("title").html(this.getDateString());
       $("#maximage").hide();
     },
@@ -43,7 +43,7 @@
       var diff = this.getMoment().diff();
 
       if (diff > 0) return "" + sToDuration(diff / 1000);
-      else return "TIME'S UP!";
+      else return "HAPPY NEW YEAR!!!";
     }
   };
 
