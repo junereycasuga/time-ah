@@ -42,11 +42,8 @@
     getTimeLeft: function() {
       var diff = this.getMoment().diff();
 
-      if (diff > 0){
-          return "" + sToDuration(diff / 1000);
-      }
-      else{
-          return "HAPPY NEW YEAR!!!";
+      if (diff > 0) return "" + sToDuration(diff / 1000);
+      else return "HAPPY NEW YEAR!!!";
     }
   };
 
