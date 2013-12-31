@@ -46,7 +46,8 @@
           return "" + sToDuration(diff / 1000);
       }
       else{
-          $('.logo, .heading-3').hide();
+          $('.logo').hide();
+          $('.heading-3').hide();
           return "HAPPY NEW YEAR!!!";
     }
   };
