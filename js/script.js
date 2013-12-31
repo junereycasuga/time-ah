@@ -12,8 +12,8 @@
       $(".timer, .t-sub").hide();
       $(".logo").addClass('animated fadeInDown');
       $(".logo").on('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(){
-        $(".timer, .t-sub").show();
-        $(".timer, .t-sub").addClass('animated fadeIn');
+        $(".timer").show();
+        $(".timer").addClass('animated fadeIn');
       });
       $("title").html(this.getDateString());
       $("#maximage").hide();
@@ -46,8 +46,6 @@
           return "" + sToDuration(diff / 1000);
       }
       else{
-          $('.logo').hide();
-          $('.heading-3').hide();
           return "HAPPY NEW YEAR!!!";
     }
   };
