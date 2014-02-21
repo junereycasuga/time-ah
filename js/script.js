@@ -9,7 +9,7 @@
   Countdown.prototype = {
     initialize: function() {
       this.update();
-      $(".timer, .t-sub").hide();
+      $(".timer").hide();
       $(".logo").addClass('animated fadeInDown');
       $(".logo").on('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(){
         $(".timer").show();
@@ -43,7 +43,7 @@
       var diff = this.getMoment().diff();
 
       if (diff > 0) return "" + sToDuration(diff / 1000);
-      else return "HAPPY NEW YEAR!!!";
+      else return "CONGRATULATIONS GRADUATES!!!!";
     }
   };
 
@@ -54,7 +54,7 @@
       .replace(/(_|%20)/g, ' ')
       .replace(/^in /, '+');
     if (!hash) {
-      hash = "January 1 2014"; 
+      hash = "March 29, 2014"; 
     }
     var date = Date.parse(hash);
 
